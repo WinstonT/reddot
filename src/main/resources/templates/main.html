@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <body>
+        <p>
+            Request Payment URL
+        </p>
+        <form method="post" th:action="@{/payment}">
+            <button type="submit" value="Pay">Pay</button>
+        </form>
+    </body>
+</html>

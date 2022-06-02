@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <span th:text="'Transaction ID' + ${object.transaction_id}"></span><br>
+    <span th:text="'Payment URL:'"></span>
+    <a th:href="@{/payment}">Link</a><br>
+    <span th:text="'Response Message: ' + ${object.response_msg}"></span>
+</body>
+</html>
